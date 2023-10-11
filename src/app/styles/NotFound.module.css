@@ -1,0 +1,27 @@
+.error {
+    display: flex;
+    background: #e51e2a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.number {
+    font-weight: 500;
+}
+.title {
+    font-weight: 500;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 7px;
+    height: 42px;
+    width: 110px;
+    text-decoration: none;
+}

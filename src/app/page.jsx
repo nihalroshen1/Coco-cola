@@ -18,7 +18,9 @@ import drink7 from '../../public/drinks/drink7.png';
 import drink8 from '../../public/drinks/drink8.png';
 import drink3 from '../../public/drinks/drink3.png';
 import drink4 from '../../public/drinks/drink4.png';
-import drink6 from '../../public/drinks/drink6.png';
+import drink9 from '../../public/drinks/drink9.png';
+import drink10 from '../../public/drinks/drink10.png';
+import drink11 from '../../public/drinks/drink11.png';
 export default function Home() {
   {
     const swiper = useSwiper();
@@ -37,19 +39,19 @@ export default function Home() {
               />
             <ul className={styles.navigation}>
               <li>
-                <Link className="a" href={"/home"}>Home</Link>
+                <Link className={styles.link} href={"/"}>Home</Link>
               </li>
               <li>
-                <Link className="a" href={"/products"}>Products</Link>
+                <Link className={styles.link} href={"/products"}>Products</Link>
               </li>
               <li>
-                <Link className="a" href={"/about-us/kiebot"}>About us</Link>
+                <Link className={styles.link} href={"/about-us/kiebot"}>About us</Link>
               </li>
               <li>
-                <Link className="a" href={"/myaccount/profile"}>Profile</Link>
+                <Link className={styles.link} href={"/myaccount/profile"}>Profile</Link>
               </li>
               <li>
-                <Link className="a" href={"/login"}>Login</Link>
+                <Link className={styles.link} href={"/login"}>Login</Link>
               </li>
             </ul>
           </div>
@@ -69,21 +71,34 @@ export default function Home() {
 
           direction={'horizontal'}
         slidesPerView={3}
+        effect="coverflow"
+        centeredSlides={true}
+        cubeEffect={true}
+        // coverflowEffect={
+        //   {
+        //     rotate:0,
+        //     stretch:0,
+        //     depth:200,
+        //     modifier:1,
+        //   slideShadows:true          }
+        // }
         mousewheel={true}
         pagination={{
           clickable: true,
         }}
         modules={[Mousewheel, Pagination]}
     >
-      <SwiperSlide><Image src={drink7} height={""} width={"170"} alt=""/></SwiperSlide>
-      <SwiperSlide><Image src={drink8} height={""} width={"120"} alt=""/></SwiperSlide>
-      <SwiperSlide><Image src={drink3} height={""} width={"110"} alt=""/></SwiperSlide>
-      <SwiperSlide><Image src={drink4} height={""} width={"110"} alt=""/></SwiperSlide>
-      <SwiperSlide><Image src={drink6} height={""} width={"45"} alt=""/></SwiperSlide>
+      <SwiperSlide><Image src={drink11} height={"250"} width={"300"} alt="" /></SwiperSlide>
+      <SwiperSlide><Image src={drink8} height={"250"} width={"230"} alt=""/></SwiperSlide>
+      <SwiperSlide><Image src={drink3} height={""} width={"190"} alt=""/></SwiperSlide>
+      <SwiperSlide><Image src={drink4} height={""} width={"190"} alt=""/></SwiperSlide>
+      <SwiperSlide><Image src={drink9} height={""} width={"250"} alt=""/></SwiperSlide>
+      <SwiperSlide><Image src={drink10} height={""} width={"360"} alt=""/></SwiperSlide>
+      <SwiperSlide><Image src={drink11} height={""} width={"340"} alt=""/></SwiperSlide>
     
     </Swiper>
         </div>
-        <div classnameName={styles.scroll}>
+        <div className={styles.scroll}>
           <Link href={"#"}><Image src={facebook} width={"45"} height={""} alt="" /></Link>
           <Link href={"#"}><Image src={twitter} width={"45"} height={""} alt="" /></Link>
           <Link href={"#"}><Image src={instagram} width={"45"} height={""} alt="" /></Link>

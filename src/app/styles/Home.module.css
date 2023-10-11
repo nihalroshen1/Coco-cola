@@ -17,7 +17,6 @@
     width: 100%;
     height: 100%;
     background: #161616;
-    clip-path: circle(70% at right -20%);
 }
 
 .header {
@@ -83,9 +82,10 @@
 }
 .scroll {
     position: absolute;
-    bottom: 40px;
-    width: 230px;
     left: 215px;
+    width: 240px;
+    height: 60px;
+    bottom: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -102,5 +102,35 @@
 }
 .banner {
     display: flex;
-    
+    justify-content: space-around;
+}
+.link {
+    color: #fff;
+}
+.link :hover {
+    color: #161616;
+}
+@media (max-width:991px)
+{
+    .section {
+        top: -10px;
+        padding: 40px;
+    }
+    .header {
+        padding: 150px 40px;
+    }
+    .scroll {
+        left: 40px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content .textBox {
+        max-width: 100%;
+    }
+    .banner {
+     max-width: 200px;
+     align-items: center;
+     padding: -10px;
+    }
 }
